@@ -23,13 +23,48 @@
         tr:nth-child(even) {
             background-color: #f5f5f5;
         }
+
+        .login {
+            width: 350px;
+            border: 1px solid #aaa;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .login h2 {
+            margin-top: 0;
+        }
+
+        .login label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        .login input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #aaa;
+        }
+
+        .login button {
+            margin-top: 15px;
+            padding: 8px 20px;
+            background-color: #555;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
     <h1>Candi Borobudur</h1>
     
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_nkDwLQaAANxUF42MiIgzehQ1gG5cVG8hKGqqBtyqg&s=10" alt="Candi Borobudur">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh_nkDwLQaAANxUF42MiIgzehQ1gG5cVG8hKGqqBtyqg&s=10" 
+         alt="Candi Borobudur">
     
     <h2>Pengalaman Wisata Saya</h2>
     <p>
@@ -82,6 +117,20 @@
             <td>Rp100.000</td>
         </tr>
     </table>
+
+    <h2>Login</h2>
+
+    <form class="login">
+        <h2>Login Pengunjung</h2>
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+
+        <button type="submit">Login</button>
+    </form>
     
     <h2>Website Pariwisata</h2>
     <a href="https://borobudurpark.com" target="_blank">
